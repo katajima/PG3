@@ -1,11 +1,20 @@
 #include <stdio.h>
 #include <iostream>
 #include <Windows.h>
+#include "Enemy.h"
+
+
+
 
 
 int main() {
-	printf("LE2A_09_カタジマ_ロウノシン_PG3");
+	Enemy enemy;
+
+	enemy.Update();
 
 	return 0;
 }
+
+
+
 
