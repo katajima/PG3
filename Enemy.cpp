@@ -2,12 +2,7 @@
 #include "stdio.h"
 
 
-void(Enemy::* Enemy::spfuncTeble[])()
-= {
-	&Enemy::Approach,
-	&Enemy::Shot,
-	&Enemy::Breakaway
-};
+
 
 void Enemy::Approach()
 {

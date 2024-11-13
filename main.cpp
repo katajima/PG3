@@ -4,13 +4,21 @@
 #include "Enemy.h"
 
 
-
+void(Enemy::* Enemy::spfuncTeble[])()
+= {
+	&Enemy::Approach,
+	&Enemy::Shot,
+	&Enemy::Breakaway
+};
 
 
 int main() {
-	Enemy enemy;
+	Enemy* enemy  = new Enemy();
 
-	enemy.Update();
+	enemy->Update();
+
+	
+	delete enemy;
 
 	return 0;
 }
